@@ -1,0 +1,22 @@
+﻿@page
+@model UninterTestMaker.Web.Pages.Evaluation.EvaluatingModel
+@{
+    var evaluation = Model.Instance;
+}
+
+@Html.DisplayText(evaluation.Id.ToString())
+@foreach (var question in evaluation.Questions)
+{
+    @Html.DisplayText(question.Text)
+    @Html.DisplayText(question.Command)
+    foreach (var alternative in question.Alternatives)
+    {
+        foreach (var attribute in alternative.Attributes)
+        {
+            if (attribute.Name != "texto")
+                continue;
+
+            @Html.DisplayText(attribute.Value)
+        }
+    }
+}

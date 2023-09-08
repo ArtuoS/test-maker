@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\UninterTestMaker.Web.props" />
+</Project>
