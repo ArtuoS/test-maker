@@ -1,0 +1,21 @@
+﻿@page
+@using TestMaker.Web.Pages;
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="container text-center">
+    <h1 class="text-danger">Autenticação</h1>
+    @using (Html.BeginForm())
+    {
+        <div class="row">
+            <div class="col-md-11">
+                @Html.TextBoxFor(t => t.NumeroRu, new { @class = "form-control", @placeholde = "Insira seu RU" })
+            </div>
+            <div class="form-group col-md-1">
+                <input type="submit" value="Autenticar" class="btn btn-success" />
+            </div>
+        </div>
+    }
+</div>

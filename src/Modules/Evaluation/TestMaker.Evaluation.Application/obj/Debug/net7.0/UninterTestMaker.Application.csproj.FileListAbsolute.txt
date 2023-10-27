@@ -1,0 +1,15 @@
+D:\Projetos\test-maker\UninterTestMaker.Application\bin\Debug\net7.0\UninterTestMaker.Application.deps.json
+D:\Projetos\test-maker\UninterTestMaker.Application\bin\Debug\net7.0\UninterTestMaker.Application.dll
+D:\Projetos\test-maker\UninterTestMaker.Application\bin\Debug\net7.0\UninterTestMaker.Application.pdb
+D:\Projetos\test-maker\UninterTestMaker.Application\obj\Debug\net7.0\UninterTestMaker.Application.csproj.AssemblyReference.cache
+D:\Projetos\test-maker\UninterTestMaker.Application\obj\Debug\net7.0\UninterTestMaker.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos\test-maker\UninterTestMaker.Application\obj\Debug\net7.0\UninterTestMaker.Application.AssemblyInfoInputs.cache
+D:\Projetos\test-maker\UninterTestMaker.Application\obj\Debug\net7.0\UninterTestMaker.Application.AssemblyInfo.cs
+D:\Projetos\test-maker\UninterTestMaker.Application\obj\Debug\net7.0\UninterTestMaker.Application.csproj.CoreCompileInputs.cache
+D:\Projetos\test-maker\UninterTestMaker.Application\obj\Debug\net7.0\UninterTestMaker.Application.dll
+D:\Projetos\test-maker\UninterTestMaker.Application\obj\Debug\net7.0\refint\UninterTestMaker.Application.dll
+D:\Projetos\test-maker\UninterTestMaker.Application\obj\Debug\net7.0\UninterTestMaker.Application.pdb
+D:\Projetos\test-maker\UninterTestMaker.Application\obj\Debug\net7.0\ref\UninterTestMaker.Application.dll
+D:\Projetos\test-maker\UninterTestMaker.Application\bin\Debug\net7.0\UninterTestMaker.Domain.dll
+D:\Projetos\test-maker\UninterTestMaker.Application\bin\Debug\net7.0\UninterTestMaker.Domain.pdb
+D:\Projetos\test-maker\UninterTestMaker.Application\obj\Debug\net7.0\UninterTestMaker.Application.csproj.CopyComplete

@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34018.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2CB94A3F-1D9C-4784-AEA1-46AA3581D412}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "web", "web", "{17529604-92DA-4F94-AF42-A915292FEF5E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{7B21D312-A16B-44EF-B773-C1448AC7138D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Authentication", "Authentication", "{9AA22DC8-9EEB-4EFE-B345-AE4F5BA45B19}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Evaluation", "Evaluation", "{7939FE26-DA42-4FCB-9616-96232F174739}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestMaker.Web", "api\TestMaker\TestMaker.Web.csproj", "{D91685F0-4B72-47FD-B23F-17928785F8E7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestMaker.Evaluation.Application", "src\Modules\Evaluation\TestMaker.Evaluation.Application\TestMaker.Evaluation.Application.csproj", "{DB0E686D-FB45-4BAC-9596-1E597FF3E10A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestMaker.Evaluation.Domain", "src\Modules\Evaluation\TestMaker.Evaluation.Domain\TestMaker.Evaluation.Domain.csproj", "{65A7A2A1-7091-426E-8CE1-F4DFF403781A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMaker.Authentication.Domain", "src\Modules\Authentication\TestMaker.Authentication.Domain\TestMaker.Authentication.Domain.csproj", "{C05D1913-3A2B-49D8-89D7-259CCF67D825}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMaker.Authentication.Application", "src\Modules\Authentication\TestMaker.Authentication.Application\TestMaker.Authentication.Application.csproj", "{6EDF09C8-D352-470F-B157-49E65230811D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMaker.Authentication.Persistence", "src\Modules\Authentication\TestMaker.Authentication.Persistence\TestMaker.Authentication.Persistence.csproj", "{43204DA8-A498-458E-AA14-42AD889774F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D91685F0-4B72-47FD-B23F-17928785F8E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D91685F0-4B72-47FD-B23F-17928785F8E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D91685F0-4B72-47FD-B23F-17928785F8E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D91685F0-4B72-47FD-B23F-17928785F8E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB0E686D-FB45-4BAC-9596-1E597FF3E10A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB0E686D-FB45-4BAC-9596-1E597FF3E10A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB0E686D-FB45-4BAC-9596-1E597FF3E10A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB0E686D-FB45-4BAC-9596-1E597FF3E10A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65A7A2A1-7091-426E-8CE1-F4DFF403781A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65A7A2A1-7091-426E-8CE1-F4DFF403781A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65A7A2A1-7091-426E-8CE1-F4DFF403781A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65A7A2A1-7091-426E-8CE1-F4DFF403781A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C05D1913-3A2B-49D8-89D7-259CCF67D825}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C05D1913-3A2B-49D8-89D7-259CCF67D825}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C05D1913-3A2B-49D8-89D7-259CCF67D825}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C05D1913-3A2B-49D8-89D7-259CCF67D825}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EDF09C8-D352-470F-B157-49E65230811D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EDF09C8-D352-470F-B157-49E65230811D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EDF09C8-D352-470F-B157-49E65230811D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EDF09C8-D352-470F-B157-49E65230811D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43204DA8-A498-458E-AA14-42AD889774F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43204DA8-A498-458E-AA14-42AD889774F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43204DA8-A498-458E-AA14-42AD889774F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43204DA8-A498-458E-AA14-42AD889774F4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7B21D312-A16B-44EF-B773-C1448AC7138D} = {2CB94A3F-1D9C-4784-AEA1-46AA3581D412}
+		{9AA22DC8-9EEB-4EFE-B345-AE4F5BA45B19} = {7B21D312-A16B-44EF-B773-C1448AC7138D}
+		{7939FE26-DA42-4FCB-9616-96232F174739} = {7B21D312-A16B-44EF-B773-C1448AC7138D}
+		{D91685F0-4B72-47FD-B23F-17928785F8E7} = {17529604-92DA-4F94-AF42-A915292FEF5E}
+		{DB0E686D-FB45-4BAC-9596-1E597FF3E10A} = {7939FE26-DA42-4FCB-9616-96232F174739}
+		{65A7A2A1-7091-426E-8CE1-F4DFF403781A} = {7939FE26-DA42-4FCB-9616-96232F174739}
+		{C05D1913-3A2B-49D8-89D7-259CCF67D825} = {9AA22DC8-9EEB-4EFE-B345-AE4F5BA45B19}
+		{6EDF09C8-D352-470F-B157-49E65230811D} = {9AA22DC8-9EEB-4EFE-B345-AE4F5BA45B19}
+		{43204DA8-A498-458E-AA14-42AD889774F4} = {9AA22DC8-9EEB-4EFE-B345-AE4F5BA45B19}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB5E5202-BE12-4E36-894F-E093350E86D6}
+	EndGlobalSection
+EndGlobal

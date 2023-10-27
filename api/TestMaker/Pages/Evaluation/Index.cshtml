@@ -1,0 +1,21 @@
+﻿@page "/evaluation/index"
+@using TestMaker.Web.Pages.Evaluation;
+@model EvaluationModel
+@{
+    ViewData["Title"] = "TestMaker";
+}
+
+<div class="container">
+    <h1 class="text-danger">Seja bem-vindo ao TestMaker da Uniter.</h1>
+    @using (Html.BeginForm())
+    {
+        @Html.TextBoxFor(t => t.Evaluation, new { @class = "form-control", @placeholde = "URL da prova" })
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <br>
+                <input type="submit" value="Iniciar prova" class="btn btn-success" />
+            </div>
+        </div>
+    }
+</div>
