@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ujATT6O28x2djq10HL0t+1M6xAbEdQUJaq+CFruyroQ=",
+  "Source": "TestMaker.Authentication.API",
+  "BasePath": "_content/TestMaker.Authentication.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

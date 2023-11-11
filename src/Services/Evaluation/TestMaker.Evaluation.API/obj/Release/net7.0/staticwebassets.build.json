@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "qtQh110O/Yv7Bnpc2y3yvz45AyfAbJAAefZKc4Mmxcc=",
+  "Source": "TestMaker.Evaluation.API",
+  "BasePath": "_content/TestMaker.Evaluation.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,15 @@
+D:\Projetos\test-maker\src\Services\Authentication\TestMaker.Authentication.Application\bin\Release\net7.0\TestMaker.Authentication.Application.deps.json
+D:\Projetos\test-maker\src\Services\Authentication\TestMaker.Authentication.Application\bin\Release\net7.0\TestMaker.Authentication.Application.dll
+D:\Projetos\test-maker\src\Services\Authentication\TestMaker.Authentication.Application\bin\Release\net7.0\TestMaker.Authentication.Application.pdb
+D:\Projetos\test-maker\src\Services\Authentication\TestMaker.Authentication.Application\bin\Release\net7.0\TestMaker.Authentication.Domain.dll
+D:\Projetos\test-maker\src\Services\Authentication\TestMaker.Authentication.Application\bin\Release\net7.0\TestMaker.Authentication.Domain.pdb
+D:\Projetos\test-maker\src\Services\Authentication\TestMaker.Authentication.Application\obj\Release\net7.0\TestMaker.Authentication.Application.csproj.AssemblyReference.cache
+D:\Projetos\test-maker\src\Services\Authentication\TestMaker.Authentication.Application\obj\Release\net7.0\TestMaker.Authentication.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos\test-maker\src\Services\Authentication\TestMaker.Authentication.Application\obj\Release\net7.0\TestMaker.Authentication.Application.AssemblyInfoInputs.cache
+D:\Projetos\test-maker\src\Services\Authentication\TestMaker.Authentication.Application\obj\Release\net7.0\TestMaker.Authentication.Application.AssemblyInfo.cs
+D:\Projetos\test-maker\src\Services\Authentication\TestMaker.Authentication.Application\obj\Release\net7.0\TestMaker.Authentication.Application.csproj.CoreCompileInputs.cache
+D:\Projetos\test-maker\src\Services\Authentication\TestMaker.Authentication.Application\obj\Release\net7.0\TestMaker.Authentication.Application.csproj.CopyComplete
+D:\Projetos\test-maker\src\Services\Authentication\TestMaker.Authentication.Application\obj\Release\net7.0\TestMaker.Authentication.Application.dll
+D:\Projetos\test-maker\src\Services\Authentication\TestMaker.Authentication.Application\obj\Release\net7.0\refint\TestMaker.Authentication.Application.dll
+D:\Projetos\test-maker\src\Services\Authentication\TestMaker.Authentication.Application\obj\Release\net7.0\TestMaker.Authentication.Application.pdb
+D:\Projetos\test-maker\src\Services\Authentication\TestMaker.Authentication.Application\obj\Release\net7.0\ref\TestMaker.Authentication.Application.dll

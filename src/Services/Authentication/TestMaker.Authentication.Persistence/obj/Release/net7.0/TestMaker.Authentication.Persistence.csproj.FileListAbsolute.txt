@@ -1,0 +1,15 @@
+D:\Projetos\test-maker\src\Services\Authentication\TestMaker.Authentication.Persistence\bin\Release\net7.0\TestMaker.Authentication.Persistence.deps.json
+D:\Projetos\test-maker\src\Services\Authentication\TestMaker.Authentication.Persistence\bin\Release\net7.0\TestMaker.Authentication.Persistence.dll
+D:\Projetos\test-maker\src\Services\Authentication\TestMaker.Authentication.Persistence\bin\Release\net7.0\TestMaker.Authentication.Persistence.pdb
+D:\Projetos\test-maker\src\Services\Authentication\TestMaker.Authentication.Persistence\bin\Release\net7.0\TestMaker.Authentication.Domain.dll
+D:\Projetos\test-maker\src\Services\Authentication\TestMaker.Authentication.Persistence\bin\Release\net7.0\TestMaker.Authentication.Domain.pdb
+D:\Projetos\test-maker\src\Services\Authentication\TestMaker.Authentication.Persistence\obj\Release\net7.0\TestMaker.Authentication.Persistence.csproj.AssemblyReference.cache
+D:\Projetos\test-maker\src\Services\Authentication\TestMaker.Authentication.Persistence\obj\Release\net7.0\TestMaker.Authentication.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos\test-maker\src\Services\Authentication\TestMaker.Authentication.Persistence\obj\Release\net7.0\TestMaker.Authentication.Persistence.AssemblyInfoInputs.cache
+D:\Projetos\test-maker\src\Services\Authentication\TestMaker.Authentication.Persistence\obj\Release\net7.0\TestMaker.Authentication.Persistence.AssemblyInfo.cs
+D:\Projetos\test-maker\src\Services\Authentication\TestMaker.Authentication.Persistence\obj\Release\net7.0\TestMaker.Authentication.Persistence.csproj.CoreCompileInputs.cache
+D:\Projetos\test-maker\src\Services\Authentication\TestMaker.Authentication.Persistence\obj\Release\net7.0\TestMaker.Authentication.Persistence.csproj.CopyComplete
+D:\Projetos\test-maker\src\Services\Authentication\TestMaker.Authentication.Persistence\obj\Release\net7.0\TestMaker.Authentication.Persistence.dll
+D:\Projetos\test-maker\src\Services\Authentication\TestMaker.Authentication.Persistence\obj\Release\net7.0\refint\TestMaker.Authentication.Persistence.dll
+D:\Projetos\test-maker\src\Services\Authentication\TestMaker.Authentication.Persistence\obj\Release\net7.0\TestMaker.Authentication.Persistence.pdb
+D:\Projetos\test-maker\src\Services\Authentication\TestMaker.Authentication.Persistence\obj\Release\net7.0\ref\TestMaker.Authentication.Persistence.dll

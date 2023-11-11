@@ -1,0 +1,28 @@
+﻿@page "/evaluation/index"
+@using TestMaker.Web.Pages.Evaluation;
+@model EvaluationModel
+@{
+    ViewData["Title"] = "TestMaker";
+}
+
+<div class="container">
+    <h1 class="text-normal">Preencha os dados.</h1>
+    @using (Html.BeginForm())
+    {
+        <div class="row">
+            <div class="col-md-6">
+                @Html.TextBoxFor(t => t.Guid, new { @class = "form-control", @placeholder = "Guid de prova já existente" })
+            </div>
+            <div class="col-md-6">
+                @Html.TextBoxFor(t => t.Evaluation, new { @class = "form-control", @placeholder = "JSON de uma nova prova" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <br>
+                <input type="submit" value="Iniciar prova" class="btn btn-light" />
+            </div>
+        </div>
+    }
+</div>

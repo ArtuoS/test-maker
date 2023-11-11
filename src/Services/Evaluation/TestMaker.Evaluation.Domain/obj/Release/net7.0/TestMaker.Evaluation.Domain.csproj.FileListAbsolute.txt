@@ -1,0 +1,12 @@
+D:\Projetos\test-maker\src\Services\Evaluation\TestMaker.Evaluation.Domain\bin\Release\net7.0\TestMaker.Evaluation.Domain.deps.json
+D:\Projetos\test-maker\src\Services\Evaluation\TestMaker.Evaluation.Domain\bin\Release\net7.0\TestMaker.Evaluation.Domain.dll
+D:\Projetos\test-maker\src\Services\Evaluation\TestMaker.Evaluation.Domain\bin\Release\net7.0\TestMaker.Evaluation.Domain.pdb
+D:\Projetos\test-maker\src\Services\Evaluation\TestMaker.Evaluation.Domain\obj\Release\net7.0\TestMaker.Evaluation.Domain.csproj.AssemblyReference.cache
+D:\Projetos\test-maker\src\Services\Evaluation\TestMaker.Evaluation.Domain\obj\Release\net7.0\TestMaker.Evaluation.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos\test-maker\src\Services\Evaluation\TestMaker.Evaluation.Domain\obj\Release\net7.0\TestMaker.Evaluation.Domain.AssemblyInfoInputs.cache
+D:\Projetos\test-maker\src\Services\Evaluation\TestMaker.Evaluation.Domain\obj\Release\net7.0\TestMaker.Evaluation.Domain.AssemblyInfo.cs
+D:\Projetos\test-maker\src\Services\Evaluation\TestMaker.Evaluation.Domain\obj\Release\net7.0\TestMaker.Evaluation.Domain.csproj.CoreCompileInputs.cache
+D:\Projetos\test-maker\src\Services\Evaluation\TestMaker.Evaluation.Domain\obj\Release\net7.0\TestMaker.Evaluation.Domain.dll
+D:\Projetos\test-maker\src\Services\Evaluation\TestMaker.Evaluation.Domain\obj\Release\net7.0\refint\TestMaker.Evaluation.Domain.dll
+D:\Projetos\test-maker\src\Services\Evaluation\TestMaker.Evaluation.Domain\obj\Release\net7.0\TestMaker.Evaluation.Domain.pdb
+D:\Projetos\test-maker\src\Services\Evaluation\TestMaker.Evaluation.Domain\obj\Release\net7.0\ref\TestMaker.Evaluation.Domain.dll

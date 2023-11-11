@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\TestMaker.Evaluation.API.props" />
+</Project>

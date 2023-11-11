@@ -7,23 +7,37 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2CB94A3F-1D9
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "web", "web", "{17529604-92DA-4F94-AF42-A915292FEF5E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{7B21D312-A16B-44EF-B773-C1448AC7138D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{7B21D312-A16B-44EF-B773-C1448AC7138D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Authentication", "Authentication", "{9AA22DC8-9EEB-4EFE-B345-AE4F5BA45B19}"
+	ProjectSection(SolutionItems) = preProject
+		src\Services\Authentication\Dockerfile = src\Services\Authentication\Dockerfile
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Evaluation", "Evaluation", "{7939FE26-DA42-4FCB-9616-96232F174739}"
+	ProjectSection(SolutionItems) = preProject
+		src\Services\Evaluation\Dockerfile = src\Services\Evaluation\Dockerfile
+	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestMaker.Web", "api\TestMaker\TestMaker.Web.csproj", "{D91685F0-4B72-47FD-B23F-17928785F8E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestMaker.Web", "web\TestMaker.Web\TestMaker.Web.csproj", "{D7460D08-518E-4EBA-A233-69D9668C0722}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestMaker.Evaluation.Application", "src\Modules\Evaluation\TestMaker.Evaluation.Application\TestMaker.Evaluation.Application.csproj", "{DB0E686D-FB45-4BAC-9596-1E597FF3E10A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestMaker.Web.Core", "web\TestMaker.Web.Core\TestMaker.Web.Core.csproj", "{1B26399F-72BF-4CA2-8DCB-D5DA7CF1548A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestMaker.Evaluation.Domain", "src\Modules\Evaluation\TestMaker.Evaluation.Domain\TestMaker.Evaluation.Domain.csproj", "{65A7A2A1-7091-426E-8CE1-F4DFF403781A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestMaker.Authentication.API", "src\Services\Authentication\TestMaker.Authentication.API\TestMaker.Authentication.API.csproj", "{0964C2F2-107E-4844-AB6B-7C23A906E311}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMaker.Authentication.Domain", "src\Modules\Authentication\TestMaker.Authentication.Domain\TestMaker.Authentication.Domain.csproj", "{C05D1913-3A2B-49D8-89D7-259CCF67D825}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestMaker.Authentication.Application", "src\Services\Authentication\TestMaker.Authentication.Application\TestMaker.Authentication.Application.csproj", "{EF827C8C-4012-46D2-9CEB-63558015EE1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMaker.Authentication.Application", "src\Modules\Authentication\TestMaker.Authentication.Application\TestMaker.Authentication.Application.csproj", "{6EDF09C8-D352-470F-B157-49E65230811D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestMaker.Authentication.Domain", "src\Services\Authentication\TestMaker.Authentication.Domain\TestMaker.Authentication.Domain.csproj", "{D4D098B5-9E09-4075-951F-ABFF92E3CD57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMaker.Authentication.Persistence", "src\Modules\Authentication\TestMaker.Authentication.Persistence\TestMaker.Authentication.Persistence.csproj", "{43204DA8-A498-458E-AA14-42AD889774F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestMaker.Authentication.Persistence", "src\Services\Authentication\TestMaker.Authentication.Persistence\TestMaker.Authentication.Persistence.csproj", "{BFEEDB2E-7139-4110-8C8A-1C917389F999}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestMaker.Evaluation.API", "src\Services\Evaluation\TestMaker.Evaluation.API\TestMaker.Evaluation.API.csproj", "{C4DA1621-D28F-4039-BD63-0297BFB75E5A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestMaker.Evaluation.Application", "src\Services\Evaluation\TestMaker.Evaluation.Application\TestMaker.Evaluation.Application.csproj", "{8160398C-A665-4377-B92D-EAEF6304DD21}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestMaker.Evaluation.Domain", "src\Services\Evaluation\TestMaker.Evaluation.Domain\TestMaker.Evaluation.Domain.csproj", "{FA21B62F-5EC1-49B2-AE89-8041F6B6CA53}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestMaker.Evaluation.Persistence", "src\Services\Evaluation\TestMaker.Evaluation.Persistence\TestMaker.Evaluation.Persistence.csproj", "{8E092E37-F6D1-4482-9D72-16CD6DE222CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,30 +45,46 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D91685F0-4B72-47FD-B23F-17928785F8E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D91685F0-4B72-47FD-B23F-17928785F8E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D91685F0-4B72-47FD-B23F-17928785F8E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D91685F0-4B72-47FD-B23F-17928785F8E7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DB0E686D-FB45-4BAC-9596-1E597FF3E10A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DB0E686D-FB45-4BAC-9596-1E597FF3E10A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DB0E686D-FB45-4BAC-9596-1E597FF3E10A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DB0E686D-FB45-4BAC-9596-1E597FF3E10A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{65A7A2A1-7091-426E-8CE1-F4DFF403781A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{65A7A2A1-7091-426E-8CE1-F4DFF403781A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{65A7A2A1-7091-426E-8CE1-F4DFF403781A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{65A7A2A1-7091-426E-8CE1-F4DFF403781A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C05D1913-3A2B-49D8-89D7-259CCF67D825}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C05D1913-3A2B-49D8-89D7-259CCF67D825}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C05D1913-3A2B-49D8-89D7-259CCF67D825}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C05D1913-3A2B-49D8-89D7-259CCF67D825}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6EDF09C8-D352-470F-B157-49E65230811D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6EDF09C8-D352-470F-B157-49E65230811D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6EDF09C8-D352-470F-B157-49E65230811D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6EDF09C8-D352-470F-B157-49E65230811D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{43204DA8-A498-458E-AA14-42AD889774F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{43204DA8-A498-458E-AA14-42AD889774F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{43204DA8-A498-458E-AA14-42AD889774F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{43204DA8-A498-458E-AA14-42AD889774F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7460D08-518E-4EBA-A233-69D9668C0722}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7460D08-518E-4EBA-A233-69D9668C0722}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7460D08-518E-4EBA-A233-69D9668C0722}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7460D08-518E-4EBA-A233-69D9668C0722}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B26399F-72BF-4CA2-8DCB-D5DA7CF1548A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B26399F-72BF-4CA2-8DCB-D5DA7CF1548A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B26399F-72BF-4CA2-8DCB-D5DA7CF1548A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B26399F-72BF-4CA2-8DCB-D5DA7CF1548A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0964C2F2-107E-4844-AB6B-7C23A906E311}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0964C2F2-107E-4844-AB6B-7C23A906E311}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0964C2F2-107E-4844-AB6B-7C23A906E311}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0964C2F2-107E-4844-AB6B-7C23A906E311}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF827C8C-4012-46D2-9CEB-63558015EE1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF827C8C-4012-46D2-9CEB-63558015EE1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF827C8C-4012-46D2-9CEB-63558015EE1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF827C8C-4012-46D2-9CEB-63558015EE1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4D098B5-9E09-4075-951F-ABFF92E3CD57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4D098B5-9E09-4075-951F-ABFF92E3CD57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4D098B5-9E09-4075-951F-ABFF92E3CD57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4D098B5-9E09-4075-951F-ABFF92E3CD57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFEEDB2E-7139-4110-8C8A-1C917389F999}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFEEDB2E-7139-4110-8C8A-1C917389F999}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFEEDB2E-7139-4110-8C8A-1C917389F999}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFEEDB2E-7139-4110-8C8A-1C917389F999}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4DA1621-D28F-4039-BD63-0297BFB75E5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4DA1621-D28F-4039-BD63-0297BFB75E5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4DA1621-D28F-4039-BD63-0297BFB75E5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4DA1621-D28F-4039-BD63-0297BFB75E5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8160398C-A665-4377-B92D-EAEF6304DD21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8160398C-A665-4377-B92D-EAEF6304DD21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8160398C-A665-4377-B92D-EAEF6304DD21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8160398C-A665-4377-B92D-EAEF6304DD21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA21B62F-5EC1-49B2-AE89-8041F6B6CA53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA21B62F-5EC1-49B2-AE89-8041F6B6CA53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA21B62F-5EC1-49B2-AE89-8041F6B6CA53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA21B62F-5EC1-49B2-AE89-8041F6B6CA53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E092E37-F6D1-4482-9D72-16CD6DE222CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E092E37-F6D1-4482-9D72-16CD6DE222CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E092E37-F6D1-4482-9D72-16CD6DE222CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E092E37-F6D1-4482-9D72-16CD6DE222CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,12 +93,16 @@ Global
 		{7B21D312-A16B-44EF-B773-C1448AC7138D} = {2CB94A3F-1D9C-4784-AEA1-46AA3581D412}
 		{9AA22DC8-9EEB-4EFE-B345-AE4F5BA45B19} = {7B21D312-A16B-44EF-B773-C1448AC7138D}
 		{7939FE26-DA42-4FCB-9616-96232F174739} = {7B21D312-A16B-44EF-B773-C1448AC7138D}
-		{D91685F0-4B72-47FD-B23F-17928785F8E7} = {17529604-92DA-4F94-AF42-A915292FEF5E}
-		{DB0E686D-FB45-4BAC-9596-1E597FF3E10A} = {7939FE26-DA42-4FCB-9616-96232F174739}
-		{65A7A2A1-7091-426E-8CE1-F4DFF403781A} = {7939FE26-DA42-4FCB-9616-96232F174739}
-		{C05D1913-3A2B-49D8-89D7-259CCF67D825} = {9AA22DC8-9EEB-4EFE-B345-AE4F5BA45B19}
-		{6EDF09C8-D352-470F-B157-49E65230811D} = {9AA22DC8-9EEB-4EFE-B345-AE4F5BA45B19}
-		{43204DA8-A498-458E-AA14-42AD889774F4} = {9AA22DC8-9EEB-4EFE-B345-AE4F5BA45B19}
+		{D7460D08-518E-4EBA-A233-69D9668C0722} = {17529604-92DA-4F94-AF42-A915292FEF5E}
+		{1B26399F-72BF-4CA2-8DCB-D5DA7CF1548A} = {17529604-92DA-4F94-AF42-A915292FEF5E}
+		{0964C2F2-107E-4844-AB6B-7C23A906E311} = {9AA22DC8-9EEB-4EFE-B345-AE4F5BA45B19}
+		{EF827C8C-4012-46D2-9CEB-63558015EE1F} = {9AA22DC8-9EEB-4EFE-B345-AE4F5BA45B19}
+		{D4D098B5-9E09-4075-951F-ABFF92E3CD57} = {9AA22DC8-9EEB-4EFE-B345-AE4F5BA45B19}
+		{BFEEDB2E-7139-4110-8C8A-1C917389F999} = {9AA22DC8-9EEB-4EFE-B345-AE4F5BA45B19}
+		{C4DA1621-D28F-4039-BD63-0297BFB75E5A} = {7939FE26-DA42-4FCB-9616-96232F174739}
+		{8160398C-A665-4377-B92D-EAEF6304DD21} = {7939FE26-DA42-4FCB-9616-96232F174739}
+		{FA21B62F-5EC1-49B2-AE89-8041F6B6CA53} = {7939FE26-DA42-4FCB-9616-96232F174739}
+		{8E092E37-F6D1-4482-9D72-16CD6DE222CD} = {7939FE26-DA42-4FCB-9616-96232F174739}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EB5E5202-BE12-4E36-894F-E093350E86D6}
