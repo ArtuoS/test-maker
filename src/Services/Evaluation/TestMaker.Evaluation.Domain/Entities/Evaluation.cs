@@ -5,6 +5,14 @@ namespace TestMaker.Evaluation.Domain.Entities
 {
     public class Evaluation
     {
+        public Evaluation()
+        {
+            if (string.IsNullOrEmpty(Guid))
+            {
+                Guid = System.Guid.NewGuid().ToString();
+            }
+        }
+
         [BsonId]
         public string Guid { get; set; }
 

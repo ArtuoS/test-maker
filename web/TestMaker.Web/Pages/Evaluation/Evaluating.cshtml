@@ -21,41 +21,50 @@
     @if (evaluation is null)
         return;
 
-    @foreach (var question in evaluation.Questions)
+    @{
+        var questionIndex = 1;
+    }
+    @foreach (var question in evaluation.Questions.Take(10))
     {
-            <div class="question">
+        <div class="question" data-question-index="@questionIndex" id="@question.Id">
             @Html.Raw(System.Web.HttpUtility.HtmlDecode(question.BaseText))
-                <p hidden id="formatted-question-@question.Id">
+            <p hidden id="formatted-question-@question.Id">
                 @question.Text
-                </p>
-                <p>@question.Command</p>
-                <div class="row">
-                    <div class="col-md-9">
-                        <form>
-                        @foreach (var alternative in question.Alternatives)
-                        {
-                            @foreach (var alternativeAttribute in alternative.Attributes)
+            </p>
+            <p>@question.Command</p>
+            <div class="row">
+                <div class="col-md-9">
+                    <form>
+                        @{
+                            var alternativeIndex = 0;
+                            foreach (var alternative in question.Alternatives)
                             {
-                                if (alternativeAttribute.Name != "texto")
-                                    continue;
+                                @foreach (var alternativeAttribute in alternative.Attributes)
+                                {
+                                    if (alternativeAttribute.Name != "texto")
+                                        continue;
 
-                                            <label>
-                                                <input class="question-checkbox" type="checkbox" name="question-@question.Id" value="@alternativeAttribute.Value">
-                                    @string.Format("{0}) {1}", (char)('A' + 1), @alternativeAttribute.Value)
-                                            </label>
+                                    var questionText = string.Format("{0}) {1}", (char)('A' + alternativeIndex), alternativeAttribute.Value);
+                                    <label>
+                                        <input class="question-checkbox" type="checkbox" name="question-@question.Id">
+                                        @questionText
+                                    </label>
+                                    alternativeIndex++;
+                                }
                             }
                         }
-                            <br>
-                        </form>
-                    </div>
-                    <div class="col-md-3">
+                        <br>
+                    </form>
+                </div>
+                <div class="col-md-3">
                     @foreach (var searchType in searchTypes)
                     {
-                                <button class="search-button btn btn-danger" website="@searchType.Url" question="@question.Id">@searchType.Text</button>
+                        <button class="search-button btn btn-danger" website="@searchType.Url" question="@question.Id">@searchType.Text</button>
                     }
-                    </div>
                 </div>
             </div>
+        </div>
+        questionIndex++;
     }
 
     <button class="extract btn btn-primary">Extrair para gabarito</button>

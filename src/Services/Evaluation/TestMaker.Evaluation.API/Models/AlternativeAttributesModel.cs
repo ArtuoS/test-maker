@@ -8,7 +8,7 @@ namespace TestMaker.Evaluation.API.Models
         public long Id { get; set; }
 
         [JsonProperty("valor")]
-        private string BaseValue { get; set; }
+        public string BaseValue { get; set; }
 
         [JsonProperty("nomeAtributo")]
         public string Name { get; set; }

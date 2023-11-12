@@ -29,7 +29,6 @@ namespace TestMaker.Evaluation.API.Controllers
                 return BadRequest("Invalid evaluation.");
 
             var evaluation = _mapper.Map<Domain.Entities.Evaluation>(evaluationModel);
-            evaluation.Guid = Guid.NewGuid().ToString();
             await _repository.CreateOrUpdateAsync(evaluation);
             await _cache.AddAsync(evaluation.Guid, JsonConvert.SerializeObject(evaluation), EvaluationCacheTimeout);
 

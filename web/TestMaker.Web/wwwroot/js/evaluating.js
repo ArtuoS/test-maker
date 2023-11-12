@@ -24,4 +24,15 @@ document.addEventListener('DOMContentLoaded', function () {
             window.open(googleSearchURL, '_blank');
         });
     });
+
+    var extractButton = document.querySelector('.extract');
+    extractButton.addEventListener('click', function () {
+        var selectedAnswers = document.querySelectorAll('.question-checkbox:checked');
+        selectedAnswers.forEach((v, k) => {
+            var question = document.getElementById(v.name.replace("question-", ""));
+            var text = question.getAttribute("data-question-index");
+            text += " ->" + v.parentNode.innerText;
+            console.log(text);
+        })
+    });
 });
