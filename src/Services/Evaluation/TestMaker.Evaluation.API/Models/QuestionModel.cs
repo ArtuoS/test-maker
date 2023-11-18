@@ -12,7 +12,7 @@ namespace TestMaker.Evaluation.API.Models
         public string BaseText { get; set; }
 
         [JsonProperty("comando")]
-        public string BaseCommand { get; set; }
+        public string? BaseCommand { get; set; }
 
         [JsonProperty("alternativas")]
         public List<AlternativeModel> Alternatives { get; set; }

@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var extractButton = document.querySelector('.extract');
     extractButton.addEventListener('click', function () {
         var selectedAnswers = document.querySelectorAll('.question-checkbox:checked');
-        selectedAnswers.forEach((v, k) => {
+        selectedAnswers.forEach((v) => {
             var question = document.getElementById(v.name.replace("question-", ""));
             var text = question.getAttribute("data-question-index");
             text += " ->" + v.parentNode.innerText;

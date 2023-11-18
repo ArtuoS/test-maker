@@ -1,18 +1,87 @@
-version: '3.8'
-
+version: '3'
 services:
-  authentication:
-    image: authentication-service
+  testmaker-web:
+    container_name: "testmaker-web"
+    image: testmaker-web:latest
     build:
-      context: .
-      dockerfile: ./src/Services/Authentication/Dockerfile
+      context: ./web
+      dockerfile: Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - authentication_api_url=http://authentication-api:80
+      - evaluation_api_url=http://evaluation-api:80
+    expose:
+      - 80
     ports:
-      - "8080:80"
+      - "5000:80"
+    networks:
+      - local
 
-  evaluation:
-    image: evaluation-service
+  authentication-api:
+    container_name: "authentication-api"
+    image: authentication-api:latest
     build:
-      context: .
-      dockerfile: ./src/Services/Evaluation/Dockerfile
+      context: ./src/Services/Authentication
+      dockerfile: Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - mongo_db_connection_string=mongodb://mongo-db:27017
+      - mongo_db_database_name=test_maker
     ports:
-      - "8081:80"
+      - "5001:80"
+    depends_on:
+      - testmaker-web
+      - rabbitmq
+      - redis
+    networks:
+      - local
+
+  evaluation-api:
+    container_name: "evaluation-api"
+    image: evaluation-api:latest
+    build:
+      context: ./src/Services/Evaluation
+      dockerfile: Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - mongo_db_connection_string=mongodb://mongo-db:27017
+      - mongo_db_database_name=test_maker
+      - redis_connection_string=redis:6379
+      - redis_instance_name=test_maker
+    ports:
+      - "5002:80"
+    depends_on:
+      - testmaker-web
+      - rabbitmq
+      - redis
+    networks:
+      - local
+
+  rabbitmq:
+    image: rabbitmq:3.13.0-rc.2-management-alpine
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - local
+
+  redis:
+    image: redis:latest
+    container_name: redis
+    ports:
+      - "6379:6379"
+    networks:
+      - local
+  
+  mongo-db:
+    image: mongo:latest
+    container_name: mongo-db
+    ports:
+      - "27017:27017"
+    networks:
+      - local
+
+networks:
+  local:
+    driver: bridge

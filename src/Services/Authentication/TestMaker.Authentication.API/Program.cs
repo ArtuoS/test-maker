@@ -8,9 +8,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Newtonsoft as default JSON Converter
 
-builder.Services.AddSingleton<AuthenticationDbContext>(serviceProvider =>
+builder.Services.AddSingleton(serviceProvider =>
 {
-    return new AuthenticationDbContext("mongodb://localhost:27017", "test_maker");
+    return new AuthenticationDbContext(Environment.GetEnvironmentVariable("mongo_db_connection_string"), Environment.GetEnvironmentVariable("mongo_db_database_name"));
 });
 
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(AuthenticateAccountUseCaseHandler).Assembly));

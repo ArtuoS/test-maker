@@ -52,3 +52,4 @@ D:\Projetos\test-maker\src\Services\Authentication\TestMaker.Authentication.API\
 D:\Projetos\test-maker\src\Services\Authentication\TestMaker.Authentication.API\obj\Release\net7.0\TestMaker.Authentication.API.pdb
 D:\Projetos\test-maker\src\Services\Authentication\TestMaker.Authentication.API\obj\Release\net7.0\TestMaker.Authentication.API.genruntimeconfig.cache
 D:\Projetos\test-maker\src\Services\Authentication\TestMaker.Authentication.API\obj\Release\net7.0\ref\TestMaker.Authentication.API.dll
+D:\Projetos\test-maker\src\Services\Authentication\TestMaker.Authentication.API\bin\Release\net7.0\Newtonsoft.Json.dll

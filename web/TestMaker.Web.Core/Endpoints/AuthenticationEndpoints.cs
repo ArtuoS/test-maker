@@ -2,6 +2,6 @@
 {
     public static class AuthenticationEndpoints
     {
-        public static string Authenticate => "https://localhost:7134/api/accounts/authenticate";
+        public static string Authenticate => $"{Environment.GetEnvironmentVariable("authentication_api_url")}/api/accounts/authenticate";
     }
 }

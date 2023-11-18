@@ -62,3 +62,4 @@ D:\Projetos\test-maker\src\Services\Evaluation\TestMaker.Evaluation.API\obj\Rele
 D:\Projetos\test-maker\src\Services\Evaluation\TestMaker.Evaluation.API\obj\Release\net7.0\TestMaker.Evaluation.API.pdb
 D:\Projetos\test-maker\src\Services\Evaluation\TestMaker.Evaluation.API\obj\Release\net7.0\TestMaker.Evaluation.API.genruntimeconfig.cache
 D:\Projetos\test-maker\src\Services\Evaluation\TestMaker.Evaluation.API\obj\Release\net7.0\ref\TestMaker.Evaluation.API.dll
+D:\Projetos\test-maker\src\Services\Evaluation\TestMaker.Evaluation.API\bin\Release\net7.0\AutoMapper.dll

@@ -10,13 +10,13 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddSingleton(serviceProvider =>
 {
-    return new EvaluationDbContext("mongodb://localhost:27017", "test_maker");
+    return new EvaluationDbContext(Environment.GetEnvironmentVariable("mongo_db_connection_string"), Environment.GetEnvironmentVariable("mongo_db_database_name"));
 });
 
 builder.Services.AddStackExchangeRedisCache(options =>
 {
-    options.Configuration = "localhost:49153";
-    options.InstanceName = "evaluation_service";
+    options.Configuration = Environment.GetEnvironmentVariable("redis_connection_string");
+    options.InstanceName = Environment.GetEnvironmentVariable("redis_instance_name");
 });
 
 builder.Services.AddScoped<IEvaluationRepository, EvaluationRepository>();

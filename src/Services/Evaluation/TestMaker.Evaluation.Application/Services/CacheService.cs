@@ -8,7 +8,7 @@ namespace TestMaker.Evaluation.Application.Services
     {
         private ConfigurationOptions _configurationOptions = new ConfigurationOptions
         {
-            EndPoints = { "localhost:49153" },
+            EndPoints = { Environment.GetEnvironmentVariable("redis_connection_string") },
             Password = "redispw",
             AbortOnConnectFail = false,
         };
